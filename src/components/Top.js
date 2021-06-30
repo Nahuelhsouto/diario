@@ -37,19 +37,19 @@ export function Top() {
           icon={<PhoneIcon />}
           aria-label="phone"
           component={Link}
-          to={"/"}
+          to={"./"}
         />
         <Tab
           icon={<FavoriteIcon />}
           aria-label="favorite"
           component={Link}
-          to={"/categories"}
+          to={"./categories"}
         />
         <Tab
           icon={<PersonPinIcon />}
           aria-label="person"
           component={Link}
-          to={"/weather"}
+          to={"./weather"}
         />
       </Tabs>
     </Paper>

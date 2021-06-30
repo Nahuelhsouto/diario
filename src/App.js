@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import MediaQuery from "react-responsive";
-import { Categories, Home, Weather } from "./pages/mobile";
+import { Categories, Home,Weather } from "./pages/mobile";
 import { Top } from "./components";
 function App() {
   return (
@@ -14,9 +14,9 @@ function App() {
         <Router>
           <Top />
           <Switch>
-            <Route path={"./categories"} component={Categories} />
-            <Route path={"./weather"} component={Weather} />
-            <Route path={"./home"} component={Home} />
+            <Route path={"/weather"} component={Weather} />
+            <Route path={"/categories"} component={Categories} />
+            <Route path={"/"} component={Home} />
           </Switch>
         </Router>
       </MediaQuery>
